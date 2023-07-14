@@ -134,7 +134,7 @@ function App() {
         setGlobalSearch={setGlobalSearch}
         handleLanguageChange ={handleLanguageChange} 
       />
-      <div className='flex bg-white h-full p-8'>
+      <div className='flex bg-gary-800 h-full p-8'>
 
         <Filter 
           filterItems={filterItems} 
@@ -147,8 +147,16 @@ function App() {
             results={jobs?.length}
             sort={sort}
             handleSortByChange={handleSortByChange}
-            
+
           />
+           <Jobs 
+            jobs={jobs}
+            page={page}
+            setPage={setPage}
+            limit={limit}
+            setLimit={setLimit}
+            paginationData={paginationData}
+           />
          
         </div>
       </div>
