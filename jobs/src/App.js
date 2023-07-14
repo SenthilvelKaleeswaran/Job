@@ -147,6 +147,7 @@ function App() {
             results={jobs?.length}
             sort={sort}
             handleSortByChange={handleSortByChange}
+            
           />
          
         </div>
