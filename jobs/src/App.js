@@ -134,7 +134,7 @@ function App() {
         setGlobalSearch={setGlobalSearch}
         handleLanguageChange ={handleLanguageChange} 
       />
-      <div className='flex bg-gary-800 h-full p-8'>
+      <div className='flex bg-gray-800 h-full p-8'>
 
         <Filter 
           filterItems={filterItems} 
