@@ -1,7 +1,7 @@
 {
   "name": "jobs",
   "version": "0.1.0",
-  "proxy": "http://localhost:3004/",
+  "proxy": "https://job-api-chi.vercel.app/",
   "private": true,
   "dependencies": {
     "@sentry/react": "^7.57.0",
