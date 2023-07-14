@@ -148,14 +148,7 @@ function App() {
             sort={sort}
             handleSortByChange={handleSortByChange}
           />
-          <Jobs 
-            jobs={jobs}
-            page={page}
-            setPage={setPage}
-            limit={limit}
-            setLimit={setLimit}
-            paginationData={paginationData}
-           />
+         
         </div>
       </div>
       
