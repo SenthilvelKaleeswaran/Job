@@ -20,11 +20,11 @@ async function bootstrap() {
     const port = 3004
 
     const corsOptions: CorsOptions = {
-      origin: ['https://jobs-jobs.vercel.app/', '*'],
+      CorsModule.forRoot({
+      origin: 'https://jobs-jobs.vercel.app',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      credentials: true,
-      optionsSuccessStatus: 200,
-      allowedHeaders: ['Content-Type', 'Authorization', 'baggage', 'sentry-trace', 'Origin', 'Accept'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+    })
     };
     app.enableCors(corsOptions);
 
