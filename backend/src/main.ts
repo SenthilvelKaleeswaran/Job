@@ -19,14 +19,11 @@ async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     const port = 3004
 
-    const corsOptions: CorsOptions = {
-      CorsModule.forRoot({
+    app.enableCors({
       origin: 'https://jobs-jobs.vercel.app',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Content-Type', 'Authorization'],
-    })
-    };
-    app.enableCors(corsOptions);
+    });
 
 
     const config = new DocumentBuilder()
