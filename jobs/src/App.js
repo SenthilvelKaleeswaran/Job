@@ -43,7 +43,7 @@ function App() {
     if(globalSearch)
     {
 
-        axios.get(`/job/search?search=${globalSearch}&page=${page}&limit=${limit}`)
+        axios.get(`https://job-jobs-api.vercel.app/job/search?search=${globalSearch}&page=${page}&limit=${limit}`)
         .then(response=>{
           setJobs(response.data.jobs)
           setPaginationData(response.data)
