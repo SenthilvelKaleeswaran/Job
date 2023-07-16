@@ -20,7 +20,7 @@ async function bootstrap() {
     const port = 3004
 
     app.enableCors({
-      origin: 'https://jobs-jobs.vercel.app',
+      origin: '*',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Content-Type', 'Authorization'],
     });
